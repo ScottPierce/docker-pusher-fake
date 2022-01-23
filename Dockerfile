@@ -5,12 +5,10 @@ WORKDIR /home
 
 RUN gem install pusher:2.0.2 pusher-fake:3.0.1
 
-ADD entrypoint.sh /home/entrypoint.sh
+ADD entrypoint.sh ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
-ENV PUSHER_APP_ID=PUSHER_APP_ID \
-    PUSHER_APP_KEY=PUSHER_APP_KEY \
-    PUSHER_APP_SECRET=PUSHER_APP_SECRET \
-    PUSHER_WEB_PORT=57003 \
+ENV PUSHER_WEB_PORT=57003 \
     PUSHER_SOCKET_PORT=57004
 
 EXPOSE $PUSHER_SOCKET_PORT $PUSHER_WEB_PORT

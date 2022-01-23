@@ -1,1 +1,1 @@
-docker push scottpierce/docker-pusher-fake:latest
+docker push scottpierce/pusher-fake:latest
