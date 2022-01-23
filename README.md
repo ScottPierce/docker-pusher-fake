@@ -1,6 +1,11 @@
 # docker-pusher-fake
 A docker image for using the pusher-fake project
 
+The image can be pulled using the image:
+```
+scottpierce/pusher-fake:latest
+```
+
 The following environment variables are used to configure the image:
 * PUSHER_APP_ID - required
 * PUSHER_APP_KEY - required
