@@ -1,5 +1,5 @@
 # docker-pusher-fake
-A docker image for using the pusher-fake project
+A docker image for using the [pusher-fake](https://github.com/tristandunn/pusher-fake) project.
 
 The image can be pulled using the image:
 ```
