@@ -3,7 +3,7 @@ MAINTAINER Scott Pierce
 
 WORKDIR /home
 
-RUN gem install pusher:2.0.2 pusher-fake:3.0.1
+RUN gem install pusher:2.0.2 pusher-fake:4.1.0
 
 ADD entrypoint.sh ./entrypoint.sh
 RUN chmod +x ./entrypoint.sh
